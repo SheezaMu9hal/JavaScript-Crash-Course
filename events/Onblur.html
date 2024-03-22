@@ -1,0 +1,32 @@
+<!-- Onblur Event and Syntax 
+Onblur: If a particular form field leaves within it.
+This Javascript Onblur event triggers when a certain object loses focus. We can execute the below code to understand how to implement it. -->
+
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<p>This code snippet uses the addEventListener() method and performs a "blur" event to an input element.</p>
+
+<p>please write something and see the result (blur).</p>
+
+<input type="text" id="fname">
+
+<script>
+
+document.getElementById("fname").addEventListener("blur", myFunction);
+
+function myFunction() {
+
+  alert("your Input element lost focus.");
+
+}
+
+</script>
+
+</body>
+
+</html>

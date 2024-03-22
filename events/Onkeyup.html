@@ -1,0 +1,30 @@
+<!-- Onkeyup Event and Syntax
+You can use this Javascript event in a scenario where you press a keyboard event 
+and it performs as per your code logic. We can use the below code snippet.
+ -->
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+Enter your First name: <input type="text" id="firstname" onkeyup="myKeyUpFunction()">
+
+<p>My First name is: <span id="Test"></span></p>
+
+<script>
+
+function myKeyUpFunction() {
+
+  var input = document.getElementById("firstname").value;
+
+  document.getElementById("Test").innerHTML = input;
+
+}
+
+</script>
+
+</body>
+
+</html>

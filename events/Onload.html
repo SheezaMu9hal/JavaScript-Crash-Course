@@ -1,0 +1,37 @@
+<!-- Onload Event and Syntax
+    Onload:  When your page loads, it performs accordingly.
+The JavaScript onload event can be utilized when we have a specific requirement to execute a specific function once the page is represented fully. The below code snippet can help you understand the logic. -->
+
+<!DOCTYPE html>
+
+<html>
+
+<body onload="checkyourCookies()">
+
+<p id="OnloadTest"></p>
+
+<script>
+
+function checkyourCookies() {
+
+  var text = "";
+
+  if (navigator.cookieEnabled == true) {
+
+    text = "your web page Cookies are active.";
+
+  } else {
+
+    text = "your web page Cookies are not active.";
+
+  }
+
+  document.getElementById("OnloadTest").innerHTML = text;
+
+}
+
+</script>
+
+</body>
+
+</html> 
